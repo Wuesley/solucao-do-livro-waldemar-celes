@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 /*
 implemente uma funcao que indique se um ponto (x,y) esta localizado dentro ou fora de um retangulo. O retangulo eh definido por seus
 vertices inferior esquerdo (x0,y0) e superior direito (x1,y1). A funcao deve ter como valor de retorno 1, se o ponto estiver dentro do 
@@ -5,8 +7,6 @@ retangulo, e 0 caso contrario, obedecendo ao prototipo:
 
     int dentro_ret(int x0, int x1, int y0, int y1, int x, int y);
 */
-
-#include<stdio.h>
 
 int dentro_ret(int x0, int x1, int y0, int y1, int x, int y) {
     if (x >= x0 && x <= x1 && y >= y0 && y <= y1) {
